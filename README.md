@@ -1,4 +1,19 @@
 ---
+  pnpm run dev
+    Starts the development server.
+
+  pnpm run build
+    Builds the app for production.
+
+  pnpm start
+    Runs the built app in production mode.
+
+We suggest that you begin by typing:
+  
+  cd criptetto
+  pnpm run dev
+
+
 name: Monorepo with Turborepo
 slug: monorepo-turborepo
 description: Learn to implement a monorepo with a single Next.js site that has installed two local packages.
