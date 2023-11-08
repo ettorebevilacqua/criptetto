@@ -1,0 +1,73 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = "file:./bot.db"
+}
+
+model candlesticks {
+    id       Int     @id @default(autoincrement())
+    exchange String?
+    symbol   String?
+    period   String?
+    time     Int?
+    open     Float?
+    high     Float?
+    low      Float?
+    close    Float?
+    volume   Float?
+}
+
+model candlesticksLog {
+    id        Int     @id @default(autoincrement())
+    income_at BigInt?
+    exchange  String?
+    symbol    String?
+    period    String?
+    time      Int?
+    open      Float?
+    high      Float?
+    low       Float?
+    close     Float?
+    volume    Float?
+}
+
+model ticker {
+    id         Int     @id @default(autoincrement())
+    exchange   String?
+    symbol     String?
+    ask        Float?
+    bid        Float?
+    updated_at Int?
+}
+
+model tickerLog {
+    id        Int     @id @default(autoincrement())
+    exchange  String?
+    symbol    String?
+    ask       Float?
+    bid       Float?
+    income_at BigInt?
+}
+
+model signals {
+    id        Int     @id @default(autoincrement())
+    exchange  String?
+    symbol    String?
+    ask       Float?
+    bid       Float?
+    options   String?
+    side      String?
+    strategy  String?
+    income_at BigInt?
+    state     String?
+}
+
+model logs {
+    uuid       String  @id
+    level      String
+    message    String?
+    created_at Int
+}
