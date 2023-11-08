@@ -5,7 +5,7 @@
     "rootDir": "src",
     "lib": ["dom", "dom.iterable", "esnext"],
     "declaration": true,
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,7 +14,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "incremental": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "outDir": "./built",
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "build", "dist",  "src/**/*.cjs", "src/**/*.js", "src/**/*.jsx"]
 }

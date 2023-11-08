@@ -4,12 +4,14 @@
   "repository": "https://github.com/vercel/examples.git",
   "license": "MIT",
   "private": true,
+  "main": "index",
   "scripts": {
     "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
     "clean": "rm -rf .turbo"
   },
   "sideEffects": false,
   "type": "module",
+  "types": "index",
   "exports": {
     ".": "./src/index.ts",
     "./*": [
@@ -19,6 +21,9 @@
     ],
     "./tailwind": {
       "require": "./src/tailwind.cjs"
+    },
+    "./material": {
+      "require": "./src/material.cjs"
     }
   },
   "files": [
@@ -38,6 +43,7 @@
     "react-dom": "^17.0.0 || ^18.0.0-0"
   },
   "dependencies": {
+    "@material-tailwind/react": "^2.1.2",
     "@swc/helpers": "^0.4.12",
     "clsx": "^1.1.1"
   },
