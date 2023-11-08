@@ -13,12 +13,23 @@
   "dependencies": {
     "@acme/ui": "workspace:*",
     "@acme/utils": "workspace:*",
+    "@next/bundle-analyzer": "^14.0.1",
     "@vercel/examples-ui": "^1.0.4",
+    "d3-format": "^3.1.0",
+    "d3-time-format": "4.1.0",
+    "effect": "2.0.0-next.54",
+    "fp-ts": "^2.16.1",
+    "fp-ts-react-stable-hooks": "^1.5.0",
     "next": "canary",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-financial-charts": "^2.0.1",
+    "swr": "^2.2.4",
+    "ts-fp": "^1.0.0"
   },
   "devDependencies": {
+    "@types/d3-format": "^3.0.2",
+    "@types/d3-time-format": "^4.0.1",
     "@types/node": "^18.0.0",
     "@types/react": "latest",
     "autoprefixer": "^10.4.12",
