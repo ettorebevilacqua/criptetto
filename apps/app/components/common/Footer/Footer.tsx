@@ -1,3 +1,4 @@
+"use client"
 import { FC } from 'react'
 import cn from 'clsx'
 import Link from 'next/link'
@@ -8,7 +9,7 @@ import { Container } from '@components/ui'
 // import { I18nWidget } from '@components/common'
 // import ThemeSwitcher from '@components/ui/ThemeSwitcher'
 import s from './Footer.module.css'
-import type { Page } from '@lib/types/types'
+import type { Page } from 'types/types'
 import Logo from '../logo'
 
 interface Props {

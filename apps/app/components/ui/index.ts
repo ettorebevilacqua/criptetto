@@ -4,7 +4,7 @@
 // export { default as Sidebar } from './Sidebar'
 // export { default as Marquee } from './Marquee'
 //
-// export { default as LoadingDots } from './LoadingDots'
+
 // export { default as Skeleton } from './Skeleton'
 // export { default as Modal } from './Modal'
 // export { default as Collapse } from './Collapse'
@@ -15,4 +15,5 @@ export { default as Container } from './Container'
 export { default as Button } from './Button'
 export { default as Text } from './Text'
 export { default as Input } from './Input'
+export { default as LoadingDots } from './LoadingDots'
 export { useUI } from './context'
