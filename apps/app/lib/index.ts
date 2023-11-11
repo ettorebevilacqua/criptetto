@@ -1,1 +1,1 @@
-export { RootContext } from './context'
+export { default as getSlug } from "./get-slug"

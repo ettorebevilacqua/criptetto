@@ -1,3 +1,5 @@
+import { Category } from "./category"
+
 export type Page = {
     /**
      * The unique identifier for the page.
@@ -40,4 +42,13 @@ export type GetPageOperation = {
          */
         id: string
     }
+}
+export type PageProps = {
+    pages: Page[]
+    categories?: Category[]
+}
+
+export interface AppProps {
+    pageProps: PageProps
+    children?: React.ReactNode
 }
