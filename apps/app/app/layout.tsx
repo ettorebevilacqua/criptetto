@@ -1,7 +1,8 @@
 import '../styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { material } from '@acme/ui/'
+import { Head, Layout, Navbar } from '@components/common'
+import type { AppProps } from 'next/app'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,25 +12,16 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
+  children, Component, pageProps
 }: {
   children: React.ReactNode
-}) {
+  } & AppProps) {
   return (
     <html lang="en">
-      <head>
-        <title>Next.js</title>
-      </head>
+      <head />
       <body className={inter.className} style={{ width:"100%", backgroundColor: "white" }} >
-        <div
-          className={'header'}
-        >From layout</div>
-        <div style={{ width:"100%", backgroundColor: "white" }}>
-          {children}
-        </div>
-        <footer>
-          a foot
-        </footer>
+        <Navbar />
+        <main className="fit">{children}</main>
       </body>
     </html>
   )
